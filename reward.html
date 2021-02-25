@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reward | hellogofuckyourself.com</title>
+
+    <!-- OG metatags -->
+    <meta name="og:title" content="Reward | hellogofuckyourself.com">
+    <meta name="og:image" content="https://shop.hellogofuckyourself.com/images/icon/icon_1024px.png">
+    <meta name="og:locale" content="en_GB">
+    <meta name="og:type" content="website">
+    
+    <meta name="theme-color" content="#ABE08A">
+    <link rel="icon" href="https://shop.hellogofuckyourself.com/images/icon/icon_32px.png" sizes="32x32">
+    <link rel="icon" href="https://shop.hellogofuckyourself.com/images/icon/icon_48px.png" sizes="48x48">
+    <link rel="icon" href="https://shop.hellogofuckyourself.com/images/icon/icon_96px.png" sizes="96x96">
+    <link rel="icon" href="https://shop.hellogofuckyourself.com/images/icon/icon_144px.png" sizes="144x144">
+  </head>
+  <body>
+    <div>
+      <h1>Please wait...</h1>
+      <p>
+        <strong>You are being re-directed in <span id="counter">5</span> seconds...</strong>
+        <br>
+        If you are not being re-directed please <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">click here!</a>
+      </p>
+    </div>
+
+    <!-- Redirect script -->
+    <script type="text/javascript">
+      var display = document.getElementById("counter");
+      var url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+
+      function countdown(){
+        if (parseInt(display.innerHTML) <= 0){
+          location.href = url;
+        }
+        if (parseInt(display.innerHTML) != 0){
+          display.innerHTML = parseInt(display.innerHTML) - 1;
+        }
+      }
+      setInterval(function(){countdown();}, 1000);
+    </script>
+  </body>
+</html>
